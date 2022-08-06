@@ -78,5 +78,5 @@ svclassifier = SVC(C=1.0, kernel='linear', degree=3, gamma='auto')
 svclassifier.fit(X_train, y_train)
 
 #save the model to file
-filename = 'models/svc_model.sav' #use absolute path
-pickle.dump(modelo, open(filename, 'wb'))
+filename = '../models/svc_model.sav' #use absolute path
+pickle.dump(svclassifier, open(filename, 'wb'))
